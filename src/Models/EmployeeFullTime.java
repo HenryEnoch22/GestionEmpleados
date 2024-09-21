@@ -25,4 +25,6 @@ public class EmployeeFullTime extends Employee implements IEmployee {
     public double calculateIncentive() {
         return getSalary() + (getSalary()*0.5);
     }
+
+    //test
 }
