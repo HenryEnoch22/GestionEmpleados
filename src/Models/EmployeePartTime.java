@@ -13,16 +13,16 @@ public class EmployeePartTime extends Employee implements IEmployee {
     }
 
     public double calculateWeekSalary(){
-        return 0;
+        return getSalary() * hoursPerWeek;
     }
 
     @Override
     public double calculateSalary() {
-        return super.calculateSalary();
+        return getSalary() * hoursPerWeek;
     }
     @Override
     public double calculateIncentive() {
-        return getSalary() + (getSalary()*0.3);
+        return getSalary()*0.3;
     }
 
 }

@@ -13,18 +13,17 @@ public class EmployeeFullTime extends Employee implements IEmployee {
     }
 
     public double calculateMonthSalary(){
-        return 0;
+        return getSalary()*hoursWorked;
     }
 
     @Override
     public double calculateSalary() {
-        return super.calculateSalary();
+        return getSalary()*hoursWorked;
     }
 
     @Override
     public double calculateIncentive() {
-        return getSalary() + (getSalary()*0.5);
+        return getSalary()*0.5;
     }
 
-    //test
 }

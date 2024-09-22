@@ -3,7 +3,7 @@ package Models;
 public class Employee {
     private int ID;
     private String name;
-    private double salary;
+    private double salary; // Salary lo tomare como salario por hora
 
     Employee(){}
     public Employee(int ID, String name, double salary) {
